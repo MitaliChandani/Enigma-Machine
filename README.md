@@ -4,6 +4,7 @@ Features:
 Encrypt or decrypt messages using a configurable rotor shift.
 Clean and responsive UI built with HTML and CSS.
 Real-time message processing.
+
 Working:
 This web app uses a simplified Caesar cipher:
 Each letter in the message is shifted by a specified number (rotor).
