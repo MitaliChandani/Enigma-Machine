@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enigma Machine</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Enigma Machine</h1>
+        <form method="post">
+            <textarea name="message" placeholder="Enter your message" rows="4" required></textarea><br>
+            <input type="number" name="rotor" placeholder="Rotor Shift (e.g. 3)" required /><br>
+            
+            <button type="submit" name="action" value="encrypt">Encrypt</button>
+            <button type="submit" name="action" value="decrypt">Decrypt</button>
+        </form>
+        {% if result %}
+            <div class="result">
+                <h3>Processed Message:</h3>
+                <p>{{ result }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
