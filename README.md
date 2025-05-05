@@ -5,12 +5,22 @@ Features:
 
 Encrypt or decrypt messages using a configurable rotor shift.
 
+User registration and login with validation
+
+Dark and light theme toggle
+
+File upload interface
+
 Clean and responsive UI built with HTML and CSS.
 
 Real-time message processing.
 
 
 Working:
+
+Users visit the homepage and can choose to either register or log in.
+
+Login and registration data are temporarily stored in a Python dictionary within app.py
 
 This web app uses a simplified Caesar cipher:
 
